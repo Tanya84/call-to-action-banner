@@ -17,14 +17,12 @@ body {
 }
 
 .banner-content {
-  float: right;
-  display: inline-block;
-  max-width: 50%;
+  width: 100%;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 110px;
-  max-height: 500px;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  max-width: 100%;
 }
 
 .img-flex {
@@ -32,13 +30,46 @@ body {
   display: block;
 }
 
+.circle {
+  float: left;
+  width: 25%;
+
+}
+
+.info {
+  float: right;
+  width: 50%;
+}
 
 h2 {
   font-size: 3rem;
   font-family: Roboto Condensed;
-  
+  margin: 0;
+  line-height: 3rem;
+
 }
 
 p {
   font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 3px solid #333;
+  color: #fff;
+  padding: .4em .75em .3em;
+  font-size: 1.125rem;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #000;
+  border-color: #000;
 }
